@@ -1,0 +1,5 @@
+#pragma once
+#include <string>
+
+void linea(int cantidad, char simbolo='*');
+int pedirNumero(string mensaje = "Ingrese numero");

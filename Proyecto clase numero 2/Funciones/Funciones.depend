@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1755210576 source:c:\users\agust\onedrive\escritorio\carpeta\universidad\programacion\programacion 2\proyecto clase numero 2\funciones\funciones.cpp
+	<iostream>
+	"funciones.h"
+
+1755210720 c:\users\agust\onedrive\escritorio\carpeta\universidad\programacion\programacion 2\proyecto clase numero 2\funciones\funciones.h
+
+1755212684 source:c:\users\agust\onedrive\escritorio\carpeta\universidad\programacion\programacion 2\proyecto clase numero 2\funciones\main.cpp
+	<iostream>
+	"funciones.h"
+
