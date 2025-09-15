@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+grabarRegistro(Alumno obj);
+
 int main(){
 
      Alumno alu;
@@ -38,3 +40,13 @@ int main(){
      fclose(p);
      return 0;
 }
+grabarRegistro(Alumno obj){
+    FILE *p;
+    p = fopen("Alumnos.dat", "ab");
+    if(p== nullptr){
+
+        return false;
+    }
+    fwrite(&obj, sizeof obj, 1, p);
+}
+
