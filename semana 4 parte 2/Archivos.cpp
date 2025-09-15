@@ -2,7 +2,7 @@
 using namespace std;
 
 grabarRegistro(Alumno obj);
-
+listarAlumnos();
 int main(){
 
      Alumno alu;
@@ -40,7 +40,7 @@ int main(){
      fclose(p);
      return 0;
 }
-grabarRegistro(Alumno obj){
+void grabarRegistro(Alumno obj){
     FILE *p;
     p = fopen("Alumnos.dat", "ab");
     if(p== nullptr){
@@ -50,4 +50,18 @@ grabarRegistro(Alumno obj){
     fwrite(&obj, sizeof obj, 1, p);
     fclose(p);
 }
+void listarAlumnos(){
+    FILE *p;
+    p = fopen("Alumnos.dat", "rb")
+    if(p == nullptr){
+        return false;
+    }
+    Alumno obj;
+    while(dread(&obj, sizeof obj, 1 ,p) == 1 {
+          obj.Mostrar();
+          cout<<"------------------"<<endl;
+          )
+    fclose(p);
+}
+
 
