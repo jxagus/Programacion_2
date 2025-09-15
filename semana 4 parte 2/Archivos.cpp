@@ -48,5 +48,6 @@ grabarRegistro(Alumno obj){
         return false;
     }
     fwrite(&obj, sizeof obj, 1, p);
+    fclose(p);
 }
 
