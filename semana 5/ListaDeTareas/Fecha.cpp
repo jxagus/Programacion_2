@@ -1,7 +1,9 @@
-#include <iostream>
-using namespace std;
+#include "fecha.h"
 
-int main(){
+int fecha::getDia();
+int fecha::getMes();
+int fecha::getAnio();
 
-     return 0;
-}
+void setDia(int dia);
+void setMes(int mes);
+void setAnio(int anio);
