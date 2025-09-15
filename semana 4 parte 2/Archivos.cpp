@@ -3,9 +3,10 @@ using namespace std;
 
 int main(){
 
+     Alumno alu;
+     cout<<"tamaño de alumno.dat= "<<sizeof alu<<endl;
      FILE *p;
      p=fopen("Alumnos.dat", "");
-     Alumno alu;
      ///apertura para lectura =
      ///rb: abre un archivo en modo lectura . NO crea archivos. solo abre archivos existentes
      ///ab: abre un archivo en modo de escritura. si no existe el archivo lo crea.
