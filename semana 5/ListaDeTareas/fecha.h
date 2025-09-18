@@ -1,9 +1,9 @@
 #pragma once
-
+#include <string>
 class Fecha{
-    int _dia, _mes, _anio;
 
 public:
+    Fecha();
     Fecha(int dia, int mes, int anio);
 
     int getDia();
@@ -14,6 +14,11 @@ public:
     void setMes(int mes);
     void setAnio(int anio);
 
-    std::string toString(); //11/9/2025
+    std::string toString(); //11/9/2025 dd mm yyyy
+protected:
 
+private:
+    int _dia:
+    int _mes;
+    int _anio;
 };
