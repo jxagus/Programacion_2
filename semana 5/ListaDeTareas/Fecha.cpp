@@ -5,7 +5,7 @@ Fecha::Fecha{
     _dia(0), _mes(0), _anio(0) ///lista de composicion
 }
 Fecha::Fecha (int dia, int mes, int anio){
-    setDia(dia);
+    _dia = dia;
     setMes(mes);
     setAnio(anio);
 
