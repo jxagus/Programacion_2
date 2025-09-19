@@ -1,16 +1,25 @@
-#ifndef TAREA_H
-#define TAREA_H
-
-
+#pragma once
+#include "fecha.h"
 class Tarea
 {
     public:
         Tarea();
-        virtual ~Tarea();
+        Tarea(int id, std::string descripcion, Fecha fecha, bool completado);
+
+        void setId(int id);
+        void setDescripcion(std::string descripcion);
+        void setCompletado(bool completado);
+
+        int getID();
+        std::string getDescripcion();
+        int getCompletado();
 
     protected:
 
     private:
+        int _id;
+        Fecha _fecha; ///COMPOSICION
+        bool _completado;
+        char _descripcion[300];
 };
 
-#endif // TAREA_H
