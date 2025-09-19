@@ -1,6 +1,8 @@
 #include "fecha.h"
+#include <string>
+
 Fecha::Fecha{
-    _dia(0), _mes(0), _anio(0)
+    _dia(0), _mes(0), _anio(0) ///lista de composicion
 }
 Fecha::Fecha (int dia, int mes, int anio){
     setDia(dia);
@@ -26,6 +28,7 @@ void Fecha::setMes(int mes){
 void Fecha::setAnio(int anio){
     _anio = anio;
 }
-std::string Fecha::toString()}
+std::string Fecha::toString(){
     return to_string(_dia) + "/" + to_string(_mes) + "/" + to_string(_anio);
 }
+
