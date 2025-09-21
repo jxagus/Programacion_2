@@ -1,23 +1,24 @@
 #pragma once
 #include <string>
-class Fecha{
 
-public:
+class Fecha
+{
+  public:
     Fecha();
-    Fecha(int dia, int mes, int anio);
+    Fecha (int dia, int mes, int anio);
 
     int getDia();
-    int getMes();
-    int getAnio();
-
     void setDia(int dia);
+
+    int getMes();
     void setMes(int mes);
+
+    int getAnio();
     void setAnio(int anio);
 
-    std::string toString(); //11/9/2025 dd mm yyyy
-protected:
+    std::string toString(); /// DD/MM/YYYY
 
-private:
+  private:
     int _dia;
     int _mes;
     int _anio;

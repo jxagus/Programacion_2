@@ -37,6 +37,8 @@
 		<Unit filename="Fecha.cpp" />
 		<Unit filename="Tarea.cpp" />
 		<Unit filename="Tarea.h" />
+		<Unit filename="TareaArchivo.cpp" />
+		<Unit filename="TareaArchivo.h" />
 		<Unit filename="fecha.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
