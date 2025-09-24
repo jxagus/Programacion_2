@@ -1,24 +1,27 @@
 #pragma once
 
 class Materia{
-    ///propiedades
+    ///PROPIEDADES:
+    ///INFORMACION QUE PRETENDO ALMACENAR DE MI OBJETO
     private:
-        int _codigo;
+        int codigo;
         char nombre[50];
         int cantidadAlumnos;
         int cantidadDocentes;
     public:
-        ///metodos (comportamientos):
-        void Cargar(){}
-        void Mostrar(){}
+    ///MÉTODOS (COMPORTAMIENTO):
+        void Cargar();
+        void Mostrar();
+        ///SETTERS
+        ///RECIBEN UN VALOR POR PARAMETRO Y SE LO ASIGNAN A
+        ///LA PROPIEDAD CORRESPONDIENTE.
         void setCodigo(int c);
         void setNombre(const char *n);
+        void setCantidadAlumnos(int cA);
         void setCantidadDocentes(int cD);
-        void setCantidadAlumnos (int cA);
-
+        ///GETTERS
         int getCodigo();
-        const char *getNombre():
+        const char *getNombre();
         int getCantidadAlumnos();
         int getCantidadDocentes();
-
 };
