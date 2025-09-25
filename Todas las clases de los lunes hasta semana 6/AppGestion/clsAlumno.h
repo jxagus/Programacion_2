@@ -10,7 +10,28 @@ COMO PROPIEDAD DE OTRA DISTINTA.
 APLICA CUANDO UNA CLASE "TIENE" COMO PROPIEDAD UN OBJETO DE OTRA CLASE.
 */
 
-
+//class AlumnoNueva{
+//    private:
+//        int legajo;
+//        char nombre[30];
+//        char apellido[30];
+//        int dni;
+//        Domicilio domicilio;
+//        char telefono[15];
+//        Fecha fechaNacimiento;
+//        Fecha fechaInscripcion;
+//        bool estado;
+//    public:
+//        Alumno();
+//        void setLegajo(int l);
+//        void setNombre(const char *);
+//        void setApellido(const char *);
+//        void setDni(int);
+//        void setTelefono(const char *);
+//        void setFechaNacimiento(Fecha);
+//        void setDomicilio(Domicilio);
+//        void setEstado(bool);
+//};
 
 class Alumno{
     private:
@@ -22,6 +43,7 @@ class Alumno{
         char telefono[15];
         Fecha fechaNacimiento;
         Fecha fechaInscripcion;
+        bool estado;
     public:
         Alumno();
         void setLegajo(int);
@@ -31,6 +53,7 @@ class Alumno{
         void setTelefono(const char *);
         void setFechaNacimiento(Fecha);
         void setDomicilio(Domicilio);
+        void setEstado(bool);
         ///sets para fecha de inscripcion;
         int getLegajo();
         const char *getNombre();
@@ -39,8 +62,9 @@ class Alumno{
         const char *getTelefono();
         Fecha getFechaNacimiento();
         Domicilio getDomicilio();
+        bool getEstado();
         ///gets para fecha de inscripcion
-        void Cargar();
+        void Cargar(int leg=-1);
         void Mostrar();
         ~Alumno();
         /**

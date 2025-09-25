@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cstring> ///para caracteres
+#include <cstring>
 #include "clsAlumno.h"
 
 using namespace std;
@@ -13,11 +13,11 @@ Alumno::Alumno(){
     ///valores para la fecha de inscripcion
 }
 
-void Alumno::setLegajo(int l){ ///Alumno:: es porque pertenecen a esa clase
-    legajo = l; ///los setters reciben un valor y se lo asignan a la propiedad correspondiente
+void Alumno::setLegajo(int l){
+    legajo = l;
 }
 void Alumno::setNombre(const char *n){
-    strcpy(nombre, n); ///copiamos los caracters
+    strcpy(nombre, n);
 }
 void Alumno::setApellido(const char *a){
     strcpy(apellido, a);
@@ -33,6 +33,9 @@ void Alumno::setFechaNacimiento(Fecha fN){
 }
 void Alumno::setDomicilio(Domicilio d){
     domicilio = d;
+}
+void Alumno::setEstado(bool e){
+    estado = e;
 }
 int Alumno::getLegajo(){
     return legajo;
@@ -55,9 +58,16 @@ Fecha Alumno::getFechaNacimiento(){
 Domicilio Alumno::getDomicilio(){
     return domicilio;
 }
-void Alumno::Cargar(){
-    cout<<"INGRESE EL LEGAJO: ";
-    cin>>legajo;
+bool Alumno::getEstado(){
+    return estado;
+}
+void Alumno::Cargar(int leg){
+    if(leg == -1){
+        cout<<"INGRESE EL LEGAJO: ";
+        cin>>legajo;
+    }else{
+        legajo = leg;
+    }
     cout<<"INGRESE EL NOMBRE: ";
     cin.ignore();
     cin.getline(nombre, 30);
@@ -93,5 +103,30 @@ void Alumno::Mostrar(){
 }
 
 Alumno::~Alumno(){
-    cout<<"FIN DE LA VIDA DEL OBJETO, SE EJECUTA EL DESTRUCTOR DEL ALUMNO: "<<nombre<<endl;
+    ///cout<<"FIN DE LA VIDA DEL OBJETO, SE EJECUTA EL DESTRUCTOR DEL ALUMNO: "<<nombre<<endl;
 }
+
+//void AlumnoNueva::setLegajo(int l){
+//    legajo = l;
+//}
+//void AlumnoNueva::setNombre(const char *n){
+//    strcpy(nombre, n);
+//}
+//void AlumnoNueva::setApellido(const char *a){
+//    strcpy(apellido, a);
+//}
+//void AlumnoNueva::setDni(int d){
+//    dni = d;
+//}
+//void AlumnoNueva::setTelefono(const char *t){
+//    strcpy(telefono, t);
+//}
+//void AlumnoNueva::setFechaNacimiento(Fecha fN){
+//    fechaNacimiento = fN;
+//}
+//void AlumnoNueva::setDomicilio(Domicilio d){
+//    domicilio = d;
+//}
+//void AlumnoNueva::setEstado(bool e){
+//    estado = e;
+//}
