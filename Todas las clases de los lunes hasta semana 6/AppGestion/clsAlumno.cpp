@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cstring>
+#include <cstring> ///para caracteres
 #include "clsAlumno.h"
 
 using namespace std;
@@ -13,11 +13,11 @@ Alumno::Alumno(){
     ///valores para la fecha de inscripcion
 }
 
-void Alumno::setLegajo(int l){
-    legajo = l;
+void Alumno::setLegajo(int l){ ///Alumno:: es porque pertenecen a esa clase
+    legajo = l; ///los setters reciben un valor y se lo asignan a la propiedad correspondiente
 }
 void Alumno::setNombre(const char *n){
-    strcpy(nombre, n);
+    strcpy(nombre, n); ///copiamos los caracters
 }
 void Alumno::setApellido(const char *a){
     strcpy(apellido, a);
