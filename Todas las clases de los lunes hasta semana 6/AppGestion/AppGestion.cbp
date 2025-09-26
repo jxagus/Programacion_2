@@ -36,6 +36,10 @@
 		</Compiler>
 		<Unit filename="clsAlumno.cpp" />
 		<Unit filename="clsAlumno.h" />
+		<Unit filename="clsArchivoAlumnos.cpp" />
+		<Unit filename="clsArchivoAlumnos.h" />
+		<Unit filename="clsDomicilio.cpp" />
+		<Unit filename="clsDomicilio.h" />
 		<Unit filename="clsFecha.cpp" />
 		<Unit filename="clsFecha.h" />
 		<Unit filename="clsMateria.cpp" />
