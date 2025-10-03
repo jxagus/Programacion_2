@@ -1,6 +1,3 @@
-#ifndef CLSARCHIVOALUMNOS_H_INCLUDED
-#define CLSARCHIVOALUMNOS_H_INCLUDED
-
 #include "clsAlumno.h"
 
 class ArchivoAlumnos{
@@ -16,4 +13,4 @@ class ArchivoAlumnos{
         void listarRegistros();
 };
 
-#endif
+
